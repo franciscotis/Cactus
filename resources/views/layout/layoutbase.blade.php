@@ -7,13 +7,11 @@
 </head>
 <body>
 
-	<div class = "container">
 
 		@hasSection('body')
 			@yield('body')
 		@endif
 
-	</div>
 	<script src="{{asset('jd/app.js')}}" type="text/javascript"></script>
 </body>
 </html>

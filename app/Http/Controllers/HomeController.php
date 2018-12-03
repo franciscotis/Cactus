@@ -3,7 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-
+use App\User;
+use App\Planta;
 class HomeController extends Controller
 {
     /**
@@ -23,6 +24,18 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('home');
+         $userId = \Auth::id();
+
+         $user = User::find($userId);
+
+         if($user->isAdmin == 1)
+    {
+         $countUser = User::count();
+        $countPlant = Planta::count();
+
+        return view('admin/DashboardAdmin',compact('countUser','countPlant'));
+    }
+
+    return view('home');
     }
 }

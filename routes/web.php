@@ -12,7 +12,7 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('index');
 });
 
 Route::get('/index', function() {
@@ -41,3 +41,7 @@ Route::get('apagarPlanta/{id}','PlantaController@destroy')->name('apagarPlanta')
 Route::get('editarPlanta/{id}','PlantaController@edit')->name('editarPlanta');
 
 Route::post('editarPlanta/{id}','PlantaController@update')->name('editarPlanta');
+
+Route::get('admin_area', ['middleware' => 'admin', function () {
+        Route::get('admin', 'AdminController@index');
+}]);

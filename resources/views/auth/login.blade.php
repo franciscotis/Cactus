@@ -1,6 +1,9 @@
-@extends('layouts.app')
+@component('components.nav')
+  @endcomponent
 
-@section('content')
+@extends('layout.layoutbase')
+
+@section('body')
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">
@@ -68,4 +71,11 @@
         </div>
     </div>
 </div>
+     <!-- footer -->
+    <footer class="footer">
+      <div class="container">
+        <center><span class="text-muted">
+        © 2018 lays e francis.</span>
+      </div></center>
+    </footer>
 @endsection

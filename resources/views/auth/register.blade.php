@@ -1,6 +1,9 @@
-@extends('layouts.app')
+@component('components.nav')
+  @endcomponent
 
-@section('content')
+@extends('layout.layoutbase')
+
+@section('body')
 <div class="container">
 <div class="row ">
             <div class="col-md-4 py-5 bg-primary text-white text-center ">
@@ -73,9 +76,11 @@
                                 </button>
                             </form>
 
-
-
-
-
-
+     <!-- footer -->
+    <footer class="footer">
+      <div class="container">
+        <center><span class="text-muted">
+        © 2018 lays e francis.</span>
+      </div></center>
+    </footer>
 @endsection

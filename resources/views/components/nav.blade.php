@@ -17,7 +17,10 @@
         <a class="nav-link disabled" href="#">Sobre o Cactus</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link disabled" href="#">Cadastre-se</a>
+        <a class="nav-link disabled" href="{{route('login')}}">Login</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled" href="{{route('register')}}">Cadastre-se</a>
       </li>
     </ul>
     <form class="form-inline my-2 my-lg-0">

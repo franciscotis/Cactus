@@ -11,9 +11,7 @@
 |
 */
 
-Route::get('/', function () {
-    return view('index');
-});
+Route::get('/','PlantaController@listarPlanta');
 
 Route::get('/index', function() {
 	return view('index');
@@ -45,3 +43,5 @@ Route::post('editarPlanta/{id}','PlantaController@update')->name('editarPlanta')
 Route::get('admin_area', ['middleware' => 'admin', function () {
         Route::get('admin', 'AdminController@index');
 }]);
+
+Route::get('plantas/{id}','PlantaController@show');

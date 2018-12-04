@@ -12,10 +12,12 @@ class PlantaController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function index($id)
     {
-        //
+        $p = Planta::find($id);
+        return view('plantas',compact('p'));
     }
+
 
     /**
      * Show the form for creating a new resource.
@@ -25,6 +27,11 @@ class PlantaController extends Controller
     public function create()
     {
         //
+    }
+
+    public function listarPlanta(){
+    $plantas = Planta::all();
+    return view('index', compact('plantas'));
     }
 
     /**
@@ -105,7 +112,8 @@ class PlantaController extends Controller
      */
     public function show($id)
     {
-        //
+        $p = Planta::find($id);
+        return view('plantas',compact('p'));
     }
 
     /**

@@ -16,7 +16,7 @@ class CreatePlantasTable extends Migration
         Schema::create('plantas', function(Blueprint $table){
             $table->increments('id');
             $table->string('nomeP');
-            $table->string('nomeC')->unique();
+            $table->string('nomeC');
             $table->string('folha');
             $table->string('flor');
             $table->string('porte');

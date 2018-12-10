@@ -46,7 +46,7 @@ Route::get('admin_area', ['middleware' => 'admin', function () {
 
 Route::get('plantas/{id}','PlantaController@show');
 
-Route::get('perfil/{id}', 'UserController@show');
+Route::get('perfil/{id}', 'UserController@show')->name('perfil');;
 
 Route::get('editarPerfil/{id}','UserController@edit')->name('editarPerfil');
 

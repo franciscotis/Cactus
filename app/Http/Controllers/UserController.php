@@ -1,8 +1,8 @@
 <?php
 
 namespace App\Http\Controllers;
-
 use Illuminate\Http\Request;
+use App\User;
 
 class UserController extends Controller
 {
@@ -11,9 +11,9 @@ class UserController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function index($id)
     {
-        $u = Users::find($id);
+        $u = User::find($id);
         return view('perfil',compact('u'));
     }
 
@@ -46,7 +46,7 @@ class UserController extends Controller
      */
     public function show($id)
     {
-        $u = Users::find($id);
+        $u = User::find($id);
         return view('perfil',compact('u'));
     }
 
@@ -58,7 +58,7 @@ class UserController extends Controller
      */
     public function edit($id)
     {
-        $user = Users::find($id);
+        $user = User::find($id);
         return view('editarPerfil',compact('user'));
     }
 
@@ -71,13 +71,13 @@ class UserController extends Controller
      */
     public function update(Request $request, $id)
     {
-
-        $user->nome     = $request->input('name');
-        $user->email    = $request->input('email');
-
-        return redirect('/perfil');
-    }
-
+        $user = User::find($id);
+        $user->name = $request->input('name');
+        $user->email = $request->input('email');
+        $user->save();
+        return redirect('/perfil/'.$id);
+    
+}
     /**
      * Remove the specified resource from storage.
      *

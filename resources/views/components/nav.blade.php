@@ -7,14 +7,11 @@
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item active">
-        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Catalogo</a>
+        <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
       </li>
       
       <li class="nav-item">
-        <a class="nav-link" href="#" data-toggle="modal" data-target="#Sobre-nos">Sobre Nós</a>
+        <a class="nav-link"data-toggle="modal" data-target="#sobre">Sobre Nós</a>
       </li>
 
       <li class="nav-item">
@@ -29,20 +26,27 @@
       <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
     </form>
   </div>
+
+<!-- Modal -->
+<div id="Sobre" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title">Sobre o Cactus</h4>
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+      <div class="modal-body" style="width: 30em; word-wrap: break-word; margin: 50px">
+        <p>O Cactus é um aplicativo que busca facilitar a manutenção e os cuidados das plantas que você possui em sua casa. Com informações disponíveis a todo momento você pode evitar muitos problemas causados pela falta de cuidados ou manutenção incorreta de suas plantas. Aprenda a cuidar das suas plantas de maneira interativa e prática.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+      </div>
+    </div>
+
+  </div>
+</div>
 </nav>
 
-
-
-<div class="modal" id="Sobre-nos" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel"
-        aria-hidden="true">
-        <div class="modal-dialog modal-sm" role="document">
-            <div class="modal-content">
-                <div class="modal-body">
-                    <label for="#">Sobre Nós</label>
-                    <div class="form-group">
-                      <h4>O Cactus é um aplicativo que busca facilitar a manutenção e os cuidados das plantas que você possui em sua casa. Com informações disponíveis a todo momento você pode evitar muitos problemas causados pela falta de cuidados ou manutenção incorreta de suas plantas. Aprenda a cuidar das suas plantas de maneira interativa e prática.</h4>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+<script src="{{ asset('js/app.js') }}"></script>

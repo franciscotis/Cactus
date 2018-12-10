@@ -37,7 +37,91 @@ class Plantas extends Seeder
 
         DB::table('plantas')->insert([
 
-            'nomeP' => 'Teste',
+            'nomeP' => 'Orquídea',
+            'nomeC' => 'testaceae',
+            'folha' => 'nao possui',
+            'flor' => 'amarela',
+            'porte' => 'até 1,5m',
+            'regiao' => 'semi-árida',
+            'imagem' => 'picapau.jpg',
+
+        ]);
+
+        DB::table('plantas')->insert([
+
+            'nomeP' => 'Girassol',
+            'nomeC' => 'testaceae',
+            'folha' => 'nao possui',
+            'flor' => 'amarela',
+            'porte' => 'até 1,5m',
+            'regiao' => 'semi-árida',
+            'imagem' => 'picapau.jpg',
+
+        ]);
+
+        DB::table('plantas')->insert([
+
+            'nomeP' => 'Pinheiro',
+            'nomeC' => 'testaceae',
+            'folha' => 'nao possui',
+            'flor' => 'amarela',
+            'porte' => 'até 1,5m',
+            'regiao' => 'semi-árida',
+            'imagem' => 'picapau.jpg',
+
+        ]);
+
+        DB::table('plantas')->insert([
+
+            'nomeP' => 'Jaqueira',
+            'nomeC' => 'testaceae',
+            'folha' => 'nao possui',
+            'flor' => 'amarela',
+            'porte' => 'até 1,5m',
+            'regiao' => 'semi-árida',
+            'imagem' => 'picapau.jpg',
+
+        ]);
+
+        DB::table('plantas')->insert([
+
+            'nomeP' => 'Flor de Líns',
+            'nomeC' => 'testaceae',
+            'folha' => 'nao possui',
+            'flor' => 'amarela',
+            'porte' => 'até 1,5m',
+            'regiao' => 'semi-árida',
+            'imagem' => 'picapau.jpg',
+
+        ]);
+
+        DB::table('plantas')->insert([
+
+            'nomeP' => 'Flor de Lotus',
+            'nomeC' => 'testaceae',
+            'folha' => 'nao possui',
+            'flor' => 'amarela',
+            'porte' => 'até 1,5m',
+            'regiao' => 'semi-árida',
+            'imagem' => 'picapau.jpg',
+
+        ]);
+
+        DB::table('plantas')->insert([
+
+            'nomeP' => 'Tulipa',
+            'nomeC' => 'testaceae',
+            'folha' => 'nao possui',
+            'flor' => 'amarela',
+            'porte' => 'até 1,5m',
+            'regiao' => 'semi-árida',
+            'imagem' => 'picapau.jpg',
+
+        ]);
+
+        DB::table('plantas')->insert([
+
+            'nomeP' => 'Roseira',
             'nomeC' => 'testaceae',
             'folha' => 'nao possui',
             'flor' => 'amarela',

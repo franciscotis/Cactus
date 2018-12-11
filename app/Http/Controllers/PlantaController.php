@@ -98,7 +98,9 @@ class PlantaController extends Controller
                 $planta->regiao= "Sudeste";
             break;
         }
-        $planta->imagem = "a";
+        $path = $request->file('imagemProduto')->store('images', 'public');
+        $planta->imagem = $path;
+
         $planta->save();
 
         return redirect('controlePlanta');
@@ -193,9 +195,15 @@ class PlantaController extends Controller
                 $planta->regiao= "Sudeste";
             break;
         }
-        $planta->imagem = "a";
-        $planta->save();
+        $img_antiga = $planta->imagem;
 
+        if($request->file('imagemProduto') != null){
+            $path = $request->file('imagemProduto')->store('images', 'public');
+            $planta->imagem = $path;
+            Storage::disk('public')->delete($img_antiga);
+
+        }
+        $planta->save();
         return redirect('controlePlanta');
 
     }

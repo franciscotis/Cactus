@@ -35,7 +35,8 @@ class HomeController extends Controller
 
         return view('admin/DashboardAdmin',compact('countUser','countPlant'));
     }
+    $plantas = Planta::all();
 
-    return view('home');
+    return view('index',compact('plantas'));
     }
 }

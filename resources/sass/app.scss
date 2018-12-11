@@ -12,3 +12,16 @@
   background-color: #fff;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
 }
+
+.parallax2 {
+  /* The image used */
+  background-image: url("imgs/deserto.png");
+
+  /* Set a specific height */
+  height: 100%;
+  margin-top:10px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment:fixed;
+  background-repeat:repeat;
+}

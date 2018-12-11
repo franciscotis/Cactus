@@ -9,7 +9,7 @@
                 </div>
                 
 
-                <form method="POST" action="{{route('planta.store')}}">
+                <form method="POST" action="{{route('planta.store')}} " enctype="multipart/form-data">
                   @csrf
                   <h3>Informações sobre a Planta</h3>
                   <div class="col col-md-8">
@@ -120,7 +120,10 @@
                         </label>
                       </div>
 
-                      <div class="botaoo">
+                         <label for="img">Imagem</label>
+                         <input type="file" class="form-control-file" name="imagemProduto" id="img">
+
+                         <div class="botaoo">
                         <button type="submit" class="btn btn-success">Cadastrar</button>
                       </div>
                         </div>

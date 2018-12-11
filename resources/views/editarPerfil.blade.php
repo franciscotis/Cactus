@@ -10,8 +10,8 @@
                 <div class=" ">
                     <div class="card-body">
                         <img src="imgs/p6.png" style="width:30%">
-                        <h2 class="py-3">Cadastre-se</h2>
-                        <p>Cadastre-se e aprenda a cuidar das suas plantas de maneira interativa e prática.</p>
+                        <h2 class="py-3">Edite o seu perfil</h2>
+                        <p>E mude o seu estilo</p>
                     </div>
                 </div>
             </div>

@@ -14,8 +14,7 @@
                 <div class=" ">
                     <div class="card-body">
                         <p></p>
-                        <img src="imgs/cacto.jpg" style="width:50%">
-                        <h2 class="py-3">{{$p->nomeP}}</h2>
+                        <img width=100% src="../storage/{{$p->imagem}}">                        <h2 class="py-3">{{$p->nomeP}}</h2>
                         <p>Existem 176 gêneros e 2.275 espécies de {{$p->nomeP}}.</p>
                     </div>
                 </div>

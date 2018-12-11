@@ -120,6 +120,10 @@
                         </label>
                       </div>
 
+                         <label for="img">Imagem</label>
+                         <input type="file" class="form-control-file" name="imagemProduto" id="img">
+                         <img class = "img-thumbnail" width = 25% src = "/storage/{{$planta->imagem}}">
+
                       <div class="botaoo">
                         <button type="submit" class="btn btn-success">Editar</button>
                       </div>
